@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,7 +9,38 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        Hi
+        <div class="canvas" >
+            <canvas
+                id="myCanvas"
+                width="500"
+                height="500"
+                style="border:5px solid black;"
+            >
+                <p>Your browser does not support the HTML5 canvas tag.</p>
+            </canvas>
+        </div>
+        <div class="tools" >
+            <ul type="none" class="tool-list" >
+                <li>
+                    <Button 
+                        class="tool-button"
+                        onclick="selectPen()";
+                    > Pen </Button>
+                </li>
+                <li>
+                    <Button 
+                        class="tool-button"
+                        onclick="selectEraser()";
+                    > Eraser </Button>
+                </li>
+                <li>
+                    <Button 
+                        class="tool-button"
+                        onclick="clearCanvas()";
+                    > Clear </Button>
+                </li>
+            </ul>
+        </div>
         <script src="script.js" async defer></script>
     </body>
 </html>
